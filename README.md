@@ -68,5 +68,4 @@ Jangan masukkan token asli ke repository.
 
 Project ini dibuat untuk kebutuhan internal Mari Baca Alkitab Group 1 dan masih dalam pengembangan.
 
-````
 
