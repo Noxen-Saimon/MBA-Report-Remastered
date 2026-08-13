@@ -1,4 +1,3 @@
-````markdown
 # MBA Report Remastered
 
 Web app untuk membantu pencatatan laporan bacaan harian Mari Baca Alkitab Group 1.
@@ -25,7 +24,6 @@ Install dependency:
 ```bash
 npm install
 ````
-
 ---
 Jalankan development server:
 
