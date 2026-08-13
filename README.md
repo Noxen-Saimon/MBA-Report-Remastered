@@ -24,7 +24,7 @@ Install dependency:
 ```bash
 npm install
 ````
----
+
 Jalankan development server:
 
 ```bash
