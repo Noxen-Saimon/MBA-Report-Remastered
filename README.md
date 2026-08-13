@@ -1,7 +1,3 @@
-Iya, yang tadi **salah format**. Itu tampil sebagai satu blok Markdown panjang, bukan README yang enak langsung ditempel ke `README.md`.
-
-Untuk `README.md`, **paste teks berikut langsung ke file**. Jangan ikutkan pagar ```md di luar isinya.
-
 ````markdown
 # MBA Report Remastered
 
@@ -30,6 +26,7 @@ Install dependency:
 npm install
 ````
 
+---
 Jalankan development server:
 
 ```bash
