@@ -1,42 +1,77 @@
-# sv
+Iya, yang tadi **salah format**. Itu tampil sebagai satu blok Markdown panjang, bukan README yang enak langsung ditempel ke `README.md`.
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Untuk `README.md`, **paste teks berikut langsung ke file**. Jangan ikutkan pagar ```md di luar isinya.
 
-## Creating a project
+````markdown
+# MBA Report Remastered
 
-If you're seeing this, you've probably already done this step. Congrats!
+Web app untuk membantu pencatatan laporan bacaan harian Mari Baca Alkitab Group 1.
 
-```sh
-# create a new project
-npx sv create my-app
-```
+Dibuat menggunakan SvelteKit + Svelte 5, TypeScript, dan Turso.
 
-To recreate this project with the same configuration:
+## Fitur
 
-```sh
-# recreate this project
-npx sv@0.17.0 create --template minimal --types ts --add prettier eslint --install npm mba-project-svelt
-```
+- Daftar anggota dan status bacaan
+- Bacaan Alkitab otomatis berdasarkan tanggal
+- Riwayat laporan
+- Sistem host mingguan
+- Login berdasarkan nama anggota
+- Akses edit hanya untuk host yang sedang bertugas
+- Copy laporan ke format WhatsApp
+- Copy menu bacaan
+- Light / dark mode
+- Emoji harian berdasarkan tanggal
 
-## Developing
+## Menjalankan Project
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Install dependency:
 
-```sh
+```bash
+npm install
+````
+
+Jalankan development server:
+
+```bash
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+Build:
 
-To create a production version of your app:
-
-```sh
+```bash
 npm run build
 ```
 
-You can preview the production build with `npm run preview`.
+Preview production build:
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+```bash
+npm run preview
+```
+
+## Environment
+
+Project menggunakan Turso sebagai database.
+
+Buat file `.env` di root project:
+
+```env
+VITE_TURSO_URL=
+VITE_TURSO_TOKEN=
+```
+
+Jangan masukkan token asli ke repository.
+
+## Stack
+
+* SvelteKit
+* Svelte 5
+* TypeScript
+* Turso / libSQL
+* Vite
+
+## Catatan
+
+Project ini dibuat untuk kebutuhan internal Mari Baca Alkitab Group 1 dan masih dalam pengembangan.
+
+````
+
