@@ -5,11 +5,11 @@
 
 	const title = 'MBA REPORT - Group 1';
 
-	// ========== SENSITIVE (dari .env) ==========
+	// ========== SENSITIVE ==========
 	const TURSO_URL = import.meta.env.VITE_TURSO_URL;
 	const TURSO_TOKEN = import.meta.env.VITE_TURSO_TOKEN;
 
-	// ========== CONFIG (penting tapi bisa diubah) ==========
+	// ========== CONFIG ==========
 	const HOST_CONFIG = { START_DATE_HOST: '2026-08-09', START_INDEX_HOST: 1 };
 	const CONFIG = { START_DATE: '2026-05-03', ANCHOR_BOOK: '2 Taw', ANCHOR_CH: 12, UNLOCK_HOUR: 19 };
 	const THEME_KEY = 'mba_theme_mode';
@@ -381,7 +381,6 @@
 			return;
 		}
 
-		// Buka tahap konfirmasi identitas
 		showIdentityConfirm = true;
 	}
 
@@ -421,7 +420,6 @@
 		try {
 			const session = JSON.parse(savedSession) as UserSession;
 
-			// Pastikan user masih ada dalam daftar member
 			const userExists = members.some((member) => member.name === session.name);
 
 			if (!userExists) {
@@ -436,7 +434,6 @@
 
 			const currentPeriod = getHostPeriodStart(new Date());
 
-			// Periode host sudah berganti
 			if (session.hostPeriod !== currentPeriod) {
 				localStorage.removeItem(USER_SESSION_KEY);
 
@@ -449,12 +446,10 @@
 				return;
 			}
 
-			// Session masih valid
 			currentUser = session.name;
 			selectedUser = session.name;
 			showUserSelector = false;
 		} catch {
-			// Session rusak / invalid
 			localStorage.removeItem(USER_SESSION_KEY);
 
 			currentUser = null;
